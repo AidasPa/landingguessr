@@ -19,7 +19,7 @@
 
 <div id="app">
     <div class="row justify-content-md-center mt-lg-5">
-        <div class="col col-lg-6">
+        <div class="col col-lg-4">
             @yield('content')
         </div>
     </div>

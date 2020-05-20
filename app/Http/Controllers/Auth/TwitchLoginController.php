@@ -30,7 +30,9 @@ class TwitchLoginController extends Controller
         $user->twitch_id = $twitchAccount->id;
         $user->save();
 
-        return redirect(route('home'));
+        return redirect(route('home'))->with([
+            'linked' => true
+        ]);
     }
 
 

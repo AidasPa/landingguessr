@@ -18,6 +18,7 @@ Auth::routes();
 
 Route::middleware(['auth', 'twitch_linked'])->group(function () {
     Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/board', 'BoardController@show_my')->name('boards.me');
 });
 
 
