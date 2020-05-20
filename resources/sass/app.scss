@@ -1,5 +1,10 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+@import "components/__dot";
+
+// Global font style
+
 body {
     font-family: 'Ubuntu' !important;
 }

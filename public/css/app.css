@@ -1,4 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);body {
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.dot--grey {
+  background-color: darkgrey;
+}
+
+body {
   font-family: "Ubuntu" !important;
 }
 

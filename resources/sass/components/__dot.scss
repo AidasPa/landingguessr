@@ -1,0 +1,8 @@
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+    &--grey {
+        background-color: darkgrey;
+    }
+}
