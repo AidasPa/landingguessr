@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="21337ca0-bd81-4587-b31e-5ab70d36ff58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Board.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Board.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BoardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BoardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Board/Buttons.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Board/Buttons.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/board.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/board.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/board/votes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/board/votes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/board/buttons.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/board/buttons.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +162,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589911952489</updated>
       <workItem from="1589912006264" duration="3170000" />
-      <workItem from="1589951333549" duration="27394000" />
+      <workItem from="1589951333549" duration="28445000" />
     </task>
     <servers />
   </component>

@@ -18,7 +18,7 @@ class BoardController extends Controller
         $board = Auth::user()->board;
 
         return view('board', [
-            'votes' => $board->votes
+            'board' => $board
         ]);
     }
 }

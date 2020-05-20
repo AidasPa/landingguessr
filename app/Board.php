@@ -11,6 +11,10 @@ class Board extends Model
         'user_id', 'votingAllowed', 'landing_rate'
     ];
 
+    protected $casts = [
+        'votingAllowed' => 'boolean'
+    ];
+
     public function votes(): HasMany
     {
         return $this->hasMany(Vote::class, 'board_id');
