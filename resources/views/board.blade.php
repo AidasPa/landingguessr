@@ -14,7 +14,6 @@
             </div>
 
 
-
             <br />
             <hr />
             <button type="button" class="btn btn-outline-light btn-block">Get shareable link!</button>
