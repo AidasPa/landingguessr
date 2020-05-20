@@ -10,13 +10,12 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <!-- CSS Dependencies -->
-     <link rel="stylesheet" href="https://unpkg.com/shards-ui@latest/dist/css/shards.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
 
+    <script src="{{ asset('js/app.js') }}"></script>
     <livewire:styles/>
 </head>
 <body>
-
 <div id="app">
     <div class="row justify-content-md-center mt-lg-5">
         <div class="col col-lg-4">
