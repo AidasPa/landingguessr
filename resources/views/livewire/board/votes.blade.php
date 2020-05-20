@@ -19,3 +19,6 @@
         <div class="col-4">{{$vote->guess}}</div>
     </div>
 @endforeach
+
+
+

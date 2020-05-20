@@ -9,9 +9,10 @@
 
             @livewire('board.votes', ['votes' => $votes])
 
-            <br />
-            <hr />
-            <button type="button" class="btn btn-outline-light btn-block">Get shareable link!</button>
+            <br/>
+            <hr/>
+
+            @livewire('board.buttons')
 
         </div>
     </div>
