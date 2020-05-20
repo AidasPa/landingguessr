@@ -25,7 +25,7 @@ class TwitchLoginController extends Controller
     {
         $user = Socialite::driver('twitch')->user();
         $this->setUserHandle($user);
-        return redirect(route('welcome'));
+//        return redirect(route('welcome'));
     }
 
     private function setUserHandle($user): void

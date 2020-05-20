@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth', 'twitch_linked'])->group(function () {
 
     Route::get('/', function () {
         return view('welcome');
@@ -25,5 +25,11 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('login/twitch', 'Auth\TwitchLoginController@redirectToProvider');
-Route::get('login/twitch/callback', 'Auth\TwitchLoginController@handleProviderCallback');
+
+
+Route::middleware('auth')->prefix('login/twitch')->namespace('Auth')->name('twitch.')->group(function () {
+    Route::get('/', 'TwitchLoginController@redirectToProvider')
+        ->name('login');
+    Route::get('/callback', 'TwitchLoginController@handleProviderCallback')
+        ->name('callback');
+});
