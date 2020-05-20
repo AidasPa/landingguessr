@@ -16,7 +16,7 @@ class TwitchLinked
      */
     public function handle($request, Closure $next)
     {
-        if (is_null(Auth::user()->twitch_username)) {
+        if (is_null(Auth::user()->twitch_id)) {
             return redirect(route('twitch.login'));
         }
         return $next($request);

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Auth;
 use Socialite;
 
 class TwitchLoginController extends Controller
@@ -23,15 +24,15 @@ class TwitchLoginController extends Controller
      */
     public function handleProviderCallback(): RedirectResponse
     {
-        $user = Socialite::driver('twitch')->user();
-        $this->setUserHandle($user);
-//        return redirect(route('welcome'));
+        $twitchAccount = Socialite::driver('twitch')->user();
+
+        $user = Auth::user();
+        $user->twitch_id = $twitchAccount->id;
+        $user->save();
+
+        return redirect(route('home'));
     }
 
-    private function setUserHandle($user): void
-    {
-        dd($user);
-    }
 
 
 }

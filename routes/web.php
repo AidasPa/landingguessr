@@ -17,14 +17,8 @@ Auth::routes();
 
 
 Route::middleware(['auth', 'twitch_linked'])->group(function () {
-
-    Route::get('/', function () {
-        return view('welcome');
-    });
-
+    Route::get('/', 'HomeController@index')->name('home');
 });
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::middleware('auth')->prefix('login/twitch')->namespace('Auth')->name('twitch.')->group(function () {
