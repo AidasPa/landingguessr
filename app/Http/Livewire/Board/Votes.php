@@ -12,7 +12,7 @@ class Votes extends Component
     /**
      * @param $votes
      */
-    public function mount(array $votes): void
+    public function mount($votes): void
     {
         $this->votes = $votes;
     }

@@ -11,11 +11,9 @@
 
     <!-- Styles -->
     <!-- CSS Dependencies -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/shards-ui@latest/dist/css/shards.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/shards-ui@latest/dist/css/shards.min.css">
 
-    <livewire:styles />
+    <livewire:styles/>
 </head>
 <body>
 
@@ -28,7 +26,7 @@
 
 </div>
 
-<livewire:scripts />
+<livewire:scripts/>
 
 </body>
 </html>
