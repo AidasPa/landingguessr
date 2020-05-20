@@ -17,6 +17,7 @@ class CreateVotesTable extends Migration
             $table->id();
             $table->string('twitch_username')->unique();
             $table->foreignId('board_id')->constrained();
+            $table->integer('guess');
             $table->timestamps();
         });
     }

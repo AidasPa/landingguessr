@@ -19,6 +19,7 @@ class CreateBoardsTable extends Migration
 
             $table->foreignId('user_id')->constrained();
             $table->boolean('votingAllowed')->default(false);
+            $table->integer('landing_rate')->nullable();
         });
     }
 

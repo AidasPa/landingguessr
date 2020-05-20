@@ -2,11 +2,25 @@
 
 namespace App\Http\Livewire\Board;
 
+use Illuminate\View\View;
 use Livewire\Component;
 
 class Votes extends Component
 {
-    public function render()
+    public $votes;
+
+    /**
+     * @param $votes
+     */
+    public function mount(array $votes): void
+    {
+        $this->votes = $votes;
+    }
+
+    /**
+     * @return View
+     */
+    public function render(): View
     {
         return view('livewire.board.votes');
     }
