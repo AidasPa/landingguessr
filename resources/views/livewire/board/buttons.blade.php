@@ -11,6 +11,10 @@
     </div>
 
     <div class="col">
-        <button type="button" class="btn btn-light btn-block">Share!</button>
+        <button type="button" class="btn btn-warning btn-block">Reset</button>
+    </div>
+
+    <div>
+
     </div>
 </div>

@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21337ca0-bd81-4587-b31e-5ab70d36ff58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/sass/components/__dot.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/clientListener.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/board/buttons.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/board/buttons.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/board/votes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/board/votes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +164,9 @@
       <option name="presentableId" value="Default" />
       <updated>1589911952489</updated>
       <workItem from="1589912006264" duration="3170000" />
-      <workItem from="1589951333549" duration="28759000" />
+      <workItem from="1589951333549" duration="32026000" />
+      <workItem from="1590073382601" duration="2538000" />
+      <workItem from="1590140919234" duration="4606000" />
     </task>
     <servers />
   </component>
@@ -171,10 +178,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="337" y="75" key="SettingsEditor/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1589976966860" />
-    <state x="571" y="301" key="com.intellij.ide.util.TipDialog" timestamp="1589951600566">
+    <state x="571" y="301" key="com.intellij.ide.util.TipDialog" timestamp="1590151446382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="571" y="301" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1589951600566" />
+    <state x="571" y="301" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1590151446382" />
     <state x="532" y="237" width="840" height="1034" key="run.anything.popup" timestamp="1589977790597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

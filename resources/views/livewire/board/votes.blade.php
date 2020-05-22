@@ -11,7 +11,7 @@
 @foreach($votes as $vote)
     <div class="row">
         <div class="col-4">
-            <div class="dot--grey"></div>
+            <div class="dot dot--grey"></div>
         </div>
         <div class="col-4">{{$vote->twitch_username}}</div>
         <div class="col-4">{{$vote->guess}}</div>

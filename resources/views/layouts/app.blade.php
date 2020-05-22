@@ -15,6 +15,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <livewire:styles/>
 </head>
+
 <body>
 <div id="app">
     <div class="row justify-content-md-center mt-lg-5">
@@ -22,7 +23,6 @@
             @yield('content')
         </div>
     </div>
-
 </div>
 
 <livewire:scripts/>

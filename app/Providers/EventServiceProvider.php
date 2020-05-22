@@ -19,6 +19,9 @@ class EventServiceProvider extends ServiceProvider
             // add your listeners (aka providers) here
             'SocialiteProviders\\Twitch\\TwitchExtendSocialite@handle',
         ],
+        'App\Events\Voted' => [
+            'App\Listeners\SendVote',
+        ],
     ];
 
     /**
