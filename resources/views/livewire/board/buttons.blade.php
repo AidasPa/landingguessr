@@ -11,10 +11,7 @@
     </div>
 
     <div class="col">
-        <button type="button" class="btn btn-warning btn-block">Reset</button>
+        <button type="button" class="btn btn-warning btn-block" wire:click="$emit('resetBoard')">Reset</button>
     </div>
 
-    <div>
-
-    </div>
 </div>

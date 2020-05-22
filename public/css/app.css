@@ -10,5 +10,6 @@
 
 body {
   font-family: "Ubuntu" !important;
+  overflow-x: hidden;
 }
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Board;
 
+use App\Vote;
 use Illuminate\View\View;
 use Livewire\Component;
 
@@ -9,7 +10,8 @@ class Votes extends Component
 {
     public $votes;
     public $boardId;
-    public $test = 'no';
+
+    public $boardReset = false;
 
     /**
      * @param $votes
@@ -21,6 +23,7 @@ class Votes extends Component
         $this->votes = $votes;
     }
 
+
     /**
      * @return View
      */
@@ -29,15 +32,28 @@ class Votes extends Component
         return view('livewire.board.votes');
     }
 
-
-    public function testf() {
-        $this->test = 'yes';
-    }
-    public function getListeners()
+    /**
+     * @return array
+     */
+    public function getListeners(): array
     {
         return [
-            'echo:board-votes.' . $this->boardId . ',Voted' => 'testf'
+            'resetBoard'
         ];
+    }
+
+
+    /**
+     * @return void
+     */
+    public function resetBoard(): void
+    {
+
+        Vote::where('board_id', '=', $this->boardId)
+            ->delete();
+
+        $this->boardReset = true;
+        $this->votes = [];
     }
 
 }

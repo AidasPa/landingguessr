@@ -1,5 +1,4 @@
 <div>
-    <h1>{{ $test }}</h1>
     <div class="row">
         <div class="col-4"><strong>Dot</strong></div>
         <div class="col-4"><strong>Twitch Username</strong></div>
@@ -9,15 +8,20 @@
 
 
     @if(count($votes) === 0)
-        <p class="text-center mt-4">No votes!</p>
+        @if($boardReset)
+            <p class="text-center mt-4 text-success">Board Reset!</p>
+        @else
+            <p class="text-center mt-4">No votes!</p>
+        @endif
     @endif
+
     @foreach($votes as $vote)
         <div class="row">
             <div class="col-4">
                 <div class="dot dot--grey"></div>
             </div>
-            <div class="col-4">{{$vote->twitch_username}}</div>
-            <div class="col-4">{{$vote->guess}}</div>
+            <div class="col-4">{{ $vote->twitch_username }}</div>
+            <div class="col-4">{{ $vote->guess }}</div>
         </div>
     @endforeach
 

@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21337ca0-bd81-4587-b31e-5ab70d36ff58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LandingGuessr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LandingGuessr.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Broadcasting/BoardVotesChannel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Broadcasting/BoardVotesChannel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Events/Voted.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Events/Voted.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BoardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BoardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Board/Votes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Board/Votes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Vote.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Vote.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/board.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/board.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/board/buttons.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/board/buttons.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/board/votes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/board/votes.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +168,7 @@
       <workItem from="1589912006264" duration="3170000" />
       <workItem from="1589951333549" duration="32026000" />
       <workItem from="1590073382601" duration="2538000" />
-      <workItem from="1590140919234" duration="11913000" />
+      <workItem from="1590140919234" duration="13988000" />
     </task>
     <servers />
   </component>
