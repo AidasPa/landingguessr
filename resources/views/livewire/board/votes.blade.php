@@ -20,8 +20,8 @@
             <div class="col-4">
                 <div class="dot dot--grey"></div>
             </div>
-            <div class="col-4">{{ $vote->twitch_username }}</div>
-            <div class="col-4">{{ $vote->guess }}</div>
+            <div class="col-4">{{ $vote['twitch_username'] }}</div>
+            <div class="col-4">{{ $vote['guess'] }}</div>
         </div>
     @endforeach
 

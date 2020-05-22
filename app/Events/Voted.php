@@ -33,9 +33,12 @@ class Voted implements ShouldBroadcast
      *
      * @return \Illuminate\Broadcasting\Channel|array
      */
-    public function broadcastOn()
+    public function broadcastOn(): Channel
     {
         return new Channel('board-votes.' . $this->vote->board_id);
     }
 
+    public function broadcastWith(): array {
+        return $this->vote->toArray();
+    }
 }

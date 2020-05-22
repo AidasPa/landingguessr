@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Board;
 
 use App\Vote;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\View\View;
 use Livewire\Component;
 
@@ -20,7 +21,7 @@ class Votes extends Component
     public function mount($votes, $boardId): void
     {
         $this->boardId = $boardId;
-        $this->votes = $votes;
+        $this->votes = $votes->toArray();
     }
 
 
@@ -38,10 +39,20 @@ class Votes extends Component
     public function getListeners(): array
     {
         return [
-            'resetBoard'
+            'resetBoard',
+            'echo:board-votes.' . $this->boardId . ',Voted' => 'addVote'
         ];
     }
 
+
+    /**
+     * @param Vote $vote
+     * @return void
+     */
+    public function addVote($vote): void
+    {
+        array_push($this->votes, $vote);
+    }
 
     /**
      * @return void
