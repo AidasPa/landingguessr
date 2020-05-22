@@ -7,7 +7,7 @@
         <div class="card-body">
             <h4 class="card-title">Board</h4>
 
-            @livewire('board.votes', ['votes' => $board->votes])
+            @livewire('board.votes', ['votes' => $board->votes, 'boardId' => $board->id])
 
             <br/>
             <hr/>
@@ -16,4 +16,8 @@
 
         </div>
     </div>
+@endsection
+
+@section('scripts')
+    <script src="{{asset('js/app.js')}}"></script>
 @endsection

@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Vote extends Model
 {
     protected $fillable = [
-        'twitch_username', 'guess'
+        'twitch_username', 'guess', 'board_id'
     ];
 }

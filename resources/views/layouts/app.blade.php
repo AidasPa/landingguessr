@@ -12,7 +12,7 @@
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
 
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/styles.js') }}"></script>
     <livewire:styles/>
 </head>
 
@@ -25,7 +25,9 @@
     </div>
 </div>
 
-<livewire:scripts/>
+@yield('scripts')
+
+<livewire:scripts />
 
 </body>
 </html>

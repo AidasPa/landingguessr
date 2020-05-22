@@ -1,6 +1,5 @@
 <?php
 
-use App\Broadcasting\BoardVotesChannel;
 use Illuminate\Support\Facades\Broadcast;
 
 /*
@@ -14,8 +13,4 @@ use Illuminate\Support\Facades\Broadcast;
 |
 */
 
-Broadcast::channel('App.User.{id}', function ($user, $id) {
-    return (int) $user->id === (int) $id;
-});
-
-Broadcast::channel('board-votes.{board}', BoardVotesChannel::class);
+Broadcast::channel('board-votes.', \App\Broadcasting\BoardVotesChannel::class);

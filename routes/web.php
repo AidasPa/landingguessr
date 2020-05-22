@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +17,21 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+
+Route::get('/event', function () {
+    $faker = Faker\Factory::create();
+
+
+    $vote = new \App\Vote();
+    $vote->guess = -168;
+    $vote->twitch_username = $faker->userName;
+    $vote->board_id = 1;
+
+    $vote->save();
+    event(new \App\Events\Voted($vote));
+    dd($vote);
+
+});
 
 Route::middleware(['auth', 'twitch_linked'])->group(function () {
     Route::get('/', 'HomeController@index')->name('home');

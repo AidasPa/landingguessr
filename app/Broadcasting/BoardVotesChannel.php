@@ -24,6 +24,6 @@ class BoardVotesChannel
      */
     public function join(User $user)
     {
-        //
+        return true;
     }
 }

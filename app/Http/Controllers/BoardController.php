@@ -21,4 +21,6 @@ class BoardController extends Controller
             'board' => $board
         ]);
     }
+
+
 }

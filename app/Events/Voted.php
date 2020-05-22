@@ -16,13 +16,15 @@ class Voted implements ShouldBroadcast
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     public $vote;
+
     /**
      * Create a new event instance.
      *
-     * @return void
+     * @param Vote $vote
      */
     public function __construct(Vote $vote)
     {
+        /** @var Vote $vote */
         $this->vote = $vote;
     }
 
@@ -33,10 +35,7 @@ class Voted implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new Channel('board-votes');
+        return new Channel('board-votes.' . $this->vote->board_id);
     }
 
-    public function broadcastAs() {
-        return 'voted';
-    }
 }
