@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Board;
 
+use App\Board;
 use App\Vote;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\View\View;
@@ -13,14 +14,16 @@ class Votes extends Component
     public $boardId;
 
     public $boardReset = false;
+    public $landingRate = false;
 
     /**
      * @param $votes
      * @param $boardId
      */
-    public function mount($votes, $boardId): void
+    public function mount($votes, Board $board): void
     {
-        $this->boardId = $boardId;
+        $this->landingRate = $board->landing_rate === NULL ? false : $board->landing_rate;
+        $this->boardId = $board->id;
         $this->votes = $votes->toArray();
     }
 
@@ -41,7 +44,16 @@ class Votes extends Component
         return [
             'resetBoard',
             'echo:board-votes.' . $this->boardId . ',Voted' => 'addVote',
+            'echo:board-landings.' . $this->boardId . ',Landed' => 'landed'
         ];
+    }
+
+    /**
+     * @param int $landingRate
+     */
+    public function landed(int $landingRate): void
+    {
+        $this->landingRate = $landingRate;
     }
 
     /**

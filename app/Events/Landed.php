@@ -10,27 +10,41 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class Landed
+class Landed implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
+    /**
+     * @var integer
+     */
+    public $landingRate;
+    public $boardId;
 
     /**
      * Create a new event instance.
      *
-     * @return void
+     * @param integer $landingRate
+     * @param int $boardId
      */
-    public function __construct()
+    public function __construct(int $landingRate, int $boardId)
     {
-        //
+        $this->landingRate = $landingRate;
+        $this->boardId = $boardId;
     }
 
     /**
      * Get the channels the event should broadcast on.
      *
-     * @return \Illuminate\Broadcasting\Channel|array
+     * @return Channel|array
      */
-    public function broadcastOn()
+    public function broadcastOn(): Channel
     {
-        return new PrivateChannel('channel-name');
+        return new Channel('board-landings.' . $this->boardId);
+    }
+
+    public function broadcastWith(): array
+    {
+        return [
+            'landing' => $this->landingRate
+        ];
     }
 }

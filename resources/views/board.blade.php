@@ -7,7 +7,7 @@
         <div class="card-body">
             <h4 class="card-title">Board</h4>
 
-            @livewire('board.votes', ['votes' => $board->votes, 'boardId' => $board->id])
+            @livewire('board.votes', ['votes' => $board->votes, 'board' => $board])
 
             <br/>
             <hr/>

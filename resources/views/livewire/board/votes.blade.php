@@ -1,8 +1,12 @@
 <div>
-    <h2 class="text-center">
-        -147
-    </h2>
-    <hr />
+    <h3 class="text-center">
+        @if(!$landingRate)
+            Landing rate will be here..
+        @else
+            🛬 {{$landingRate}}
+        @endif
+    </h3>
+    <hr/>
     <div class="row">
         <div class="col-4"><strong>Dot</strong></div>
         <div class="col-4"><strong>Twitch Username</strong></div>
