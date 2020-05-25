@@ -1,7 +1,7 @@
 <div>
     <h3 class="text-center">
         @if(!$landingRate)
-            Landing rate will be here..
+            Land!
         @else
             🛬 {{$landingRate}}
         @endif

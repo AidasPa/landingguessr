@@ -38,7 +38,7 @@ class Landed implements ShouldBroadcast
      */
     public function broadcastOn(): Channel
     {
-        return new Channel('board-landings.' . $this->boardId);
+        return new Channel('landings.' . $this->boardId);
     }
 
     public function broadcastWith(): array

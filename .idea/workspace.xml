@@ -4,8 +4,8 @@
     <list default="true" id="21337ca0-bd81-4587-b31e-5ab70d36ff58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Events/Landed.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Events/Landed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BoardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BoardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Board/Votes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Board/Votes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/board.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/board.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/board/votes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/board/votes.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
     </list>
@@ -174,7 +174,7 @@
       <workItem from="1589951333549" duration="32026000" />
       <workItem from="1590073382601" duration="2538000" />
       <workItem from="1590140919234" duration="15915000" />
-      <workItem from="1590174497480" duration="22267000" />
+      <workItem from="1590174497480" duration="25369000" />
     </task>
     <servers />
   </component>

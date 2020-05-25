@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Board;
+use App\Events\Landed;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -25,16 +26,20 @@ class BoardController extends Controller
 
     public function landing(Request $request): JsonResponse
     {
+        $landing_rate = $request->json('landing_rate');
         /** @var Board $board */
 
+
         $board = \auth('api')->user()->board;
-        $board->landing_rate = $request->json('landing_rate');
+        $board->landing_rate = $landing_rate;
 
         // Disable further voting
         $board->voting_allowed = false;
         $board->save();
 
         // Emit an event
+
+        event(new Landed($landing_rate, $board->id));
 
         return response()->json([
             'status' => 'ok'

@@ -28,4 +28,5 @@ Route::middleware('auth:api')->group(function () {
         Route::post('disconnect', 'ClientController@disconnect');
     });
     Route::post('boards/me/landing', 'BoardController@landing');
+    Route::post('/boards/me/votes', 'VoteController@create');
 });

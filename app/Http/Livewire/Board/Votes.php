@@ -11,19 +11,23 @@ use Livewire\Component;
 class Votes extends Component
 {
     public $votes;
-    public $boardId;
+    public $board;
+
 
     public $boardReset = false;
     public $landingRate = false;
 
+    public $boardId;
+
     /**
      * @param $votes
-     * @param $boardId
+     * @param Board $board
      */
     public function mount($votes, Board $board): void
     {
+        $this->boardId = 1;
         $this->landingRate = $board->landing_rate === NULL ? false : $board->landing_rate;
-        $this->boardId = $board->id;
+        $this->board = $board;
         $this->votes = $votes->toArray();
     }
 
@@ -43,17 +47,17 @@ class Votes extends Component
     {
         return [
             'resetBoard',
+            'echo:landings.' . $this->boardId . ',Landed' => 'setLandingRate',
             'echo:board-votes.' . $this->boardId . ',Voted' => 'addVote',
-            'echo:board-landings.' . $this->boardId . ',Landed' => 'landed'
         ];
     }
 
     /**
-     * @param int $landingRate
+     * @param array $landing
      */
-    public function landed(int $landingRate): void
+    public function setLandingRate(array $landing): void
     {
-        $this->landingRate = $landingRate;
+        $this->landingRate = $landing['landing'];
     }
 
     /**
@@ -71,10 +75,13 @@ class Votes extends Component
     public function resetBoard(): void
     {
 
-        Vote::where('board_id', '=', $this->boardId)
+        Vote::where('board_id', '=', $this->board->id)
             ->delete();
+        $this->board->landing_rate = NULL;
+        $this->board->save();
 
         $this->boardReset = true;
+        $this->landingRate = false;
         $this->votes = [];
     }
 

@@ -18,6 +18,6 @@ Broadcast::channel('user-client.', function () {
 //    return $user->id == \App\User::query()->find($userId)->id;
     return true;
 });
-Broadcast::channel('board-landings.', function () {
+Broadcast::channel('landings.', function () {
     return true;
 });
