@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="21337ca0-bd81-4587-b31e-5ab70d36ff58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Board.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Board.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Board/Buttons.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Board/Buttons.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Board/Votes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Board/Votes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_20_095631_create_boards_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_20_095631_create_boards_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/board.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/board.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/board/buttons.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/board/buttons.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +171,7 @@
       <workItem from="1589951333549" duration="32026000" />
       <workItem from="1590073382601" duration="2538000" />
       <workItem from="1590140919234" duration="15915000" />
-      <workItem from="1590174497480" duration="14980000" />
+      <workItem from="1590174497480" duration="16371000" />
     </task>
     <servers />
   </component>
