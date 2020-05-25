@@ -13,7 +13,7 @@
         </div>
     </div>
 
-    <br />
+    <br/>
 
     <div class="card">
         <div class="card-body">
@@ -36,11 +36,12 @@
                 </div>
                 <div class="col">
                     <p>
-                        This means that the LandingGuessr client is communicating with out server and the Voting can begin.
+                        This means that the LandingGuessr client is communicating with out server and the Voting can
+                        begin.
                     </p>
                 </div>
             </div>
-            <hr />
+            <hr/>
             <h5 class="card-title">Dots</h5>
             <div class="row">
                 <div class="col-2">
@@ -56,6 +57,14 @@
                 </div>
                 <div class="col">
                     Guessed landing rate matches the landing!
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" style="font-size: 15px;">
+                    ❌
+                </div>
+                <div class="col">
+                    Landing rate too far off...
                 </div>
             </div>
 

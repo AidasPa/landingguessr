@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"/>
 
     <script src="{{ asset('js/styles.js') }}"></script>
     <livewire:styles/>
@@ -21,12 +21,14 @@
     <div class="row justify-content-md-center mt-lg-5">
         <div class="col col-lg-4">
             @yield('content')
-            <br />
+            <br/>
             <div class="card">
                 <div class="card-body text-center">
-                    Real time events powered by Pusher. Served by a DigitalOcean Droplet.
-                    <br />
-                    Made with ❤ by AidasP.
+                    <strong>BETA 0.0.1</strong>
+                    <br/>
+                    Made with <span class="text-danger">
+                        ❤
+                    </span> by <a href="https://github.com/AidasPa" target="_blank">AidasP</a>.
                 </div>
             </div>
         </div>
@@ -35,7 +37,7 @@
 
 @yield('scripts')
 
-<livewire:scripts />
+<livewire:scripts/>
 
 </body>
 </html>
