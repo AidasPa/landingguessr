@@ -27,4 +27,5 @@ Route::middleware('auth:api')->group(function () {
         Route::post('connect', 'ClientController@connect');
         Route::post('disconnect', 'ClientController@disconnect');
     });
+    Route::post('boards/me/landing', 'BoardController@landing');
 });

@@ -1,4 +1,8 @@
 <div>
+    <h2 class="text-center">
+        -147
+    </h2>
+    <hr />
     <div class="row">
         <div class="col-4"><strong>Dot</strong></div>
         <div class="col-4"><strong>Twitch Username</strong></div>
