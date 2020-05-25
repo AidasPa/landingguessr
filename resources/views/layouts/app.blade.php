@@ -21,6 +21,14 @@
     <div class="row justify-content-md-center mt-lg-5">
         <div class="col col-lg-4">
             @yield('content')
+            <br />
+            <div class="card">
+                <div class="card-body text-center">
+                    Real time events powered by Pusher. Served by a DigitalOcean Droplet.
+                    <br />
+                    Made with ❤ by AidasP.
+                </div>
+            </div>
         </div>
     </div>
 </div>
