@@ -20,21 +20,21 @@ class Buttons extends Component
      */
     public function mount(Board $board)
     {
-        $this->clientStatus = auth()->user()->client_status;
+        $this->clientStatus = auth()->user()->client_connected;
         $this->board = $board;
         $this->votingAllowed = $board->votingAllowed;
     }
 
     public function allowVoting()
     {
-        $this->board->votingAllowed = true;
+        $this->board->voting_allowed = true;
         $this->board->save();
         $this->votingAllowed = true;
     }
 
     public function stopVoting()
     {
-        $this->board->votingAllowed = false;
+        $this->board->voting_allowed = false;
         $this->board->save();
         $this->votingAllowed = false;
     }
@@ -65,5 +65,6 @@ class Buttons extends Component
     public function changeClientState(array $client): void
     {
         $this->clientStatus = $client['state'];
+        $this->stopVoting();
     }
 }

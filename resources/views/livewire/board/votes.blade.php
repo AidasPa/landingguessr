@@ -1,9 +1,9 @@
 <div>
     <h3 class="text-center">
         @if(!$landingRate)
-            Land!
+            --- fpm
         @else
-            🛬 {{$landingRate}}
+            🛬 {{$landingRate}} fpm
         @endif
     </h3>
     <hr/>
