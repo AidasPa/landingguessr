@@ -26,7 +26,7 @@
                 </div>
                 <div class="col">
                     <p>
-                        This means that the LandingGuessr client is <strong>not</strong> communicating with out server.
+                        This means that the LandingGuessr client is <strong>not</strong> communicating with our server.
                     </p>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="col">
                     <p>
-                        This means that the LandingGuessr client is communicating with out server and the Voting can
+                        This means that the LandingGuessr client is communicating with our server and the Voting can
                         begin.
                     </p>
                 </div>
@@ -64,7 +64,7 @@
                     ❌
                 </div>
                 <div class="col">
-                    Landing rate too far off...
+                    Landing rate does not match the landing.
                 </div>
             </div>
 
