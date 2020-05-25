@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21337ca0-bd81-4587-b31e-5ab70d36ff58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/LandingGuessr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LandingGuessr.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Board.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Board.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Board/Buttons.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Board/Buttons.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Board/Votes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Board/Votes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_20_095631_create_boards_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_20_095631_create_boards_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/board.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/board.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/board/buttons.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/board/buttons.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +181,7 @@
       <workItem from="1589951333549" duration="32026000" />
       <workItem from="1590073382601" duration="2538000" />
       <workItem from="1590140919234" duration="15915000" />
-      <workItem from="1590174497480" duration="10209000" />
+      <workItem from="1590174497480" duration="14980000" />
     </task>
     <servers />
   </component>
@@ -185,6 +189,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="561" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590393725840">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="561" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1590393725840" />
     <state x="337" y="75" key="SettingsEditor" timestamp="1589976966860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -201,9 +209,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="237" width="840" height="1034" key="run.anything.popup/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1589977790597" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1589953453549">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1590397151064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1589953453549" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1590397151064" />
   </component>
 </project>

@@ -18,7 +18,7 @@ class CreateBoardsTable extends Migration
             $table->timestamps();
 
             $table->foreignId('user_id')->constrained();
-            $table->boolean('votingAllowed')->default(false);
+            $table->boolean('voting_allowed')->default(false);
             $table->integer('landing_rate')->nullable();
         });
     }

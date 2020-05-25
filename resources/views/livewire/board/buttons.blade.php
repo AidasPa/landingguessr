@@ -1,6 +1,10 @@
 <div class="row">
     <div class="col">
-        <button type="button" class="btn btn-danger btn-block" disabled>Client Status</button>
+        @if(!$clientStatus)
+            <button type="button" class="btn btn-danger btn-block" disabled>Client Status</button>
+        @else
+            <button type="button" class="btn btn-success btn-block" disabled>Client Status</button>
+        @endif
     </div>
     <div class="col">
         @if($votingAllowed)

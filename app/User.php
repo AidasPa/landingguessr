@@ -37,6 +37,7 @@ class User extends Authenticatable implements JWTSubject
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'client_ready' => 'client_connected'
     ];
 
     public function board(): HasOne

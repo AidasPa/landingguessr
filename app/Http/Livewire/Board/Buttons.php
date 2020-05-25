@@ -9,16 +9,18 @@ use Livewire\Component;
 
 class Buttons extends Component
 {
-    public $clientConnected = false;
+    public $clientStatus = false;
     public $votingAllowed = false;
 
     public $board;
+
 
     /**
      * @param $board
      */
     public function mount(Board $board)
     {
+        $this->clientStatus = auth()->user()->client_status;
         $this->board = $board;
         $this->votingAllowed = $board->votingAllowed;
     }
@@ -44,5 +46,24 @@ class Buttons extends Component
     public function render(): View
     {
         return view('livewire.board.buttons');
+    }
+
+    /**
+     * @return array
+     */
+    public function getListeners(): array
+    {
+        return [
+            'echo:user-client.' . auth()->user()->id . ',ClientStateChanged' => 'changeClientState'
+        ];
+    }
+
+    /**
+     * @param array $client
+     * @return void
+     */
+    public function changeClientState(array $client): void
+    {
+        $this->clientStatus = $client['state'];
     }
 }

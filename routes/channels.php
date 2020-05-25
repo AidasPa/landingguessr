@@ -14,3 +14,7 @@ use Illuminate\Support\Facades\Broadcast;
 */
 
 Broadcast::channel('board-votes.', \App\Broadcasting\BoardVotesChannel::class);
+Broadcast::channel('user-client.', function () {
+//    return $user->id == \App\User::query()->find($userId)->id;
+    return true;
+});

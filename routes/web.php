@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 
+Broadcast::routes();
+
 Route::get('/event', function () {
     $faker = Faker\Factory::create();
 

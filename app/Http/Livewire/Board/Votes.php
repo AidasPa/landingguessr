@@ -40,10 +40,9 @@ class Votes extends Component
     {
         return [
             'resetBoard',
-            'echo:board-votes.' . $this->boardId . ',Voted' => 'addVote'
+            'echo:board-votes.' . $this->boardId . ',Voted' => 'addVote',
         ];
     }
-
 
     /**
      * @param Vote $vote

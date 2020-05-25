@@ -8,11 +8,11 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Board extends Model
 {
     protected $fillable = [
-        'user_id', 'votingAllowed', 'landing_rate'
+        'user_id', 'voting_allowed', 'landing_rate'
     ];
 
     protected $casts = [
-        'votingAllowed' => 'boolean'
+        'voting_allowed' => 'boolean'
     ];
 
     public function votes(): HasMany
