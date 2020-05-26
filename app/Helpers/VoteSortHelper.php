@@ -7,10 +7,12 @@ namespace App\Helpers;
 class VoteSortHelper
 {
     private $votes;
+    private $landingRate;
 
-    public function __construct(array $votes)
+    public function __construct(array $votes, int $landingRate)
     {
-        $this->votes;
+        $this->votes = $votes;
+        $this->landingRate = $landingRate;
     }
 
     /**
@@ -18,13 +20,23 @@ class VoteSortHelper
      */
     public function sortVotes(): array
     {
-        return [];
+        return $this->sortAndModifyItems();
     }
 
+    /**
+     * @return array
+     */
     private function sortAndModifyItems(): array
     {
-        foreach ($votes as $vote) {
-
+        $voteBag = [];
+        foreach ($this->votes as $vote) {
+            $vote['diff'] = abs($this->landingRate - $vote['guess']);
+            array_push($voteBag, $vote);
         }
+
+        usort($voteBag, function($a, $b) {
+            return $a['diff'] <=> $b['diff'];
+        });
+        return $voteBag;
     }
 }

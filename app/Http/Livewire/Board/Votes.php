@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Board;
 
 use App\Board;
+use App\Helpers\VoteSortHelper;
 use App\Vote;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\View\View;
@@ -25,10 +26,19 @@ class Votes extends Component
      */
     public function mount($votes, Board $board): void
     {
-        $this->boardId = 1;
-        $this->landingRate = $board->landing_rate === NULL ? false : $board->landing_rate;
+        if ($board->landing_rate === NULL) {
+            $this->votes = $votes->toArray();
+        } else {
+            $this->landingRate = $board->landing_rate;
+            $this->votes = $votes->toArray();
+
+            $sorter = new VoteSortHelper($this->votes, $this->landingRate);
+            $this->votes = $sorter->sortVotes();
+        }
+
         $this->board = $board;
-        $this->votes = $votes->toArray();
+        $this->boardId = $board->id;
+
     }
 
 
@@ -58,6 +68,9 @@ class Votes extends Component
     public function setLandingRate(array $landing): void
     {
         $this->landingRate = $landing['landing'];
+
+        $sorter = new VoteSortHelper($this->votes, $this->landingRate);
+        $this->votes = $sorter->sortVotes();
     }
 
     /**

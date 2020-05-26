@@ -21,8 +21,9 @@ class Buttons extends Component
     public function mount(Board $board)
     {
         $this->clientStatus = auth()->user()->client_connected;
+        /** @var Board $board */
         $this->board = $board;
-        $this->votingAllowed = $board->votingAllowed;
+        $this->votingAllowed = $board->voting_allowed;
     }
 
     public function allowVoting()
