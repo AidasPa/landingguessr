@@ -30,13 +30,31 @@ class VoteSortHelper
     {
         $voteBag = [];
         foreach ($this->votes as $vote) {
-            $vote['diff'] = abs($this->landingRate - $vote['guess']);
+            $diff = abs($this->landingRate - $vote['guess']);
+            $vote['diff'] = $diff;
+            $vote['dot'] = self::getDotFromDiff($diff);
             array_push($voteBag, $vote);
         }
 
-        usort($voteBag, function($a, $b) {
+        usort($voteBag, function ($a, $b) {
             return $a['diff'] <=> $b['diff'];
         });
         return $voteBag;
+    }
+
+    /**
+     * @param int $diff
+     * @return string
+     */
+    private static function getDotFromDiff(int $diff): string
+    {
+        if ($diff === 0) {
+            return 'black';
+        } else if ($diff === 20) {
+            return '';
+        } else {
+            return 'grey';
+        }
+
     }
 }

@@ -4,10 +4,7 @@
     <list default="true" id="21337ca0-bd81-4587-b31e-5ab70d36ff58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Helpers/VoteSortHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/VoteSortHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Board/Buttons.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Board/Buttons.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Board/Votes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Board/Votes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/Helpers/VoteSortHelperTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Helpers/VoteSortHelperTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/board/votes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/board/votes.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +172,7 @@
       <workItem from="1590073382601" duration="2538000" />
       <workItem from="1590140919234" duration="15915000" />
       <workItem from="1590174497480" duration="28585000" />
-      <workItem from="1590469612354" duration="8724000" />
+      <workItem from="1590469612354" duration="11853000" />
     </task>
     <servers />
   </component>
