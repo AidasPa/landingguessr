@@ -64,7 +64,7 @@
                     ❌
                 </div>
                 <div class="col">
-                    Landing rate does not match the landing.
+                    Landing rate does not match the guess.
                 </div>
             </div>
 
