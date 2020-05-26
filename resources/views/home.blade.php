@@ -48,7 +48,7 @@
                     <div class="dot dot--grey"></div>
                 </div>
                 <div class="col">
-                    Aircraft not landed yet!
+                    Aircraft not landed yet! / Everything else
                 </div>
             </div>
             <div class="row">
@@ -59,14 +59,14 @@
                     Guessed landing rate matches the landing!
                 </div>
             </div>
-            <div class="row">
-                <div class="col-2" style="font-size: 15px;">
-                    ❌
-                </div>
-                <div class="col">
-                    Landing rate does not match the guess.
-                </div>
-            </div>
+{{--            <div class="row">--}}
+{{--                <div class="col-2" style="font-size: 15px;">--}}
+{{--                    ❌--}}
+{{--                </div>--}}
+{{--                <div class="col">--}}
+{{--                    Landing rate does not match the guess.--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
         </div>
     </div>
