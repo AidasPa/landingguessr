@@ -18,7 +18,7 @@ class User extends Authenticatable implements JWTSubject
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'twitch_username'
+        'name', 'email', 'password', 'twitch_username', 'admin'
     ];
 
     /**
@@ -37,7 +37,8 @@ class User extends Authenticatable implements JWTSubject
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'client_ready' => 'client_connected'
+        'client_connected' => 'boolean',
+        'admin' => 'boolean'
     ];
 
     public function board(): HasOne
