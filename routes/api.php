@@ -30,7 +30,6 @@ Route::middleware('auth:api')->group(function () {
 
     Route::prefix('boards')->group(function () {
         Route::post('me/landing', 'BoardController@landing');
-
         Route::post('{board}/votes', 'VoteController@Create')->middleware('is_admin');
     });
 });
