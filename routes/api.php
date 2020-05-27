@@ -27,11 +27,10 @@ Route::middleware('auth:api')->group(function () {
         Route::post('connect', 'ClientController@connect');
         Route::post('disconnect', 'ClientController@disconnect');
     });
-    Route::post('boards/me/landing', 'BoardController@landing');
-    Route::post('/boards/me/votes', 'VoteController@create');
 
     Route::middleware()->prefix('boards')->group(function () {
-        Route::post('{board}/landing', 'BoardController@landing');
+        Route::post('me/landing', 'BoardController@landing');
+
         Route::post('{board}/votes', 'VoteController@Create');
     });
 });

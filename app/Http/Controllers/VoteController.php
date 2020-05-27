@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Board;
 use App\Events\Voted;
 use App\Vote;
 use Illuminate\Http\JsonResponse;
@@ -11,14 +12,15 @@ class VoteController extends Controller
 {
     /**
      * @param Request $request
+     * @param Board $board
      * @return JsonResponse
      */
-    public function create(Request $request): JsonResponse
+    public function create(Request $request, Board $board): JsonResponse
     {
-        if (auth()->user()->board->voting_allowed) {
+        if ($board->voting_allowed) {
 
             $vote = new Vote([
-                'board_id' => auth()->user()->board->id,
+                'board_id' => $board->id,
                 'twitch_username' => $request->json('vote')['twitch_username'],
                 'guess' => $request->json('vote')['guess']
             ]);
