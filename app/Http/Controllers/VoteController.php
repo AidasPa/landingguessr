@@ -26,8 +26,8 @@ class VoteController extends Controller
                 'guess' => $request->json('vote')['guess']
             ]);
 
-
-            if ($request->json('vote')['twitch_id'] === $board->user()->twitch_id) {
+//            dd($board->user);
+            if ($request->json('vote')['twitch_id'] === $board->user->twitch_id) {
                 $vote->is_owner = true;
             }
             // Save the vote

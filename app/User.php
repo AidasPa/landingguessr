@@ -18,7 +18,7 @@ class User extends Authenticatable implements JWTSubject
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'twitch_username', 'admin'
+        'name', 'email', 'password', 'twitch_id', 'admin'
     ];
 
     /**
