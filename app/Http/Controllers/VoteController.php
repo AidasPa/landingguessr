@@ -26,8 +26,9 @@ class VoteController extends Controller
                 'guess' => $request->json('vote')['guess']
             ]);
 
+
             if ($request->json('vote')['twitch_id'] === auth('api')->user()->twitch_id) {
-                $vote->is_admin = true;
+                $vote->is_owner = true;
             }
             // Save the vote
             $vote->save();
