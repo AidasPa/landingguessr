@@ -9,11 +9,12 @@
 
             @livewire('board.votes', ['votes' => $board->votes, 'board' => $board])
 
-            <br/>
-            <hr/>
+            @if($owner)
+                <br/>
+                <hr/>
 
-            @livewire('board.buttons', ['board' => $board])
-
+                @livewire('board.buttons', ['board' => $board])
+            @endif
         </div>
     </div>
 @endsection

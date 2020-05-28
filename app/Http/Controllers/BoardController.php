@@ -20,7 +20,16 @@ class BoardController extends Controller
         $board = Auth::user()->board;
 
         return view('board', [
-            'board' => $board
+            'board' => $board,
+            'owner' => true
+        ]);
+    }
+
+    public function show(Board $board): View
+    {
+        return view('board', [
+            'board' => $board,
+            'owner' => false
         ]);
     }
 

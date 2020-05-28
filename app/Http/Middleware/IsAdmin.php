@@ -16,9 +16,17 @@ class IsAdmin
      */
     public function handle($request, Closure $next)
     {
-        if (!auth('api')->user()->admin) {
-            return response()->json(['status' => 'error'], 401);
+        if ($request->expectsJson()) {
+            if (!auth('api')->user()->admin) {
+                return response()->json(['status' => 'error'], 401);
+            }
+            return $next($request);
+
+        } else {
+            if (!auth()->user()->admin) {
+                return redirect(route('home'));
+            }
+            return $next($request);
         }
-        return $next($request);
     }
 }

@@ -38,6 +38,9 @@ Route::get('/event', function () {
 Route::middleware(['auth', 'twitch_linked'])->group(function () {
     Route::get('/', 'HomeController@index')->name('home');
     Route::get('/board', 'BoardController@show_my')->name('boards.me');
+    Route::get('/boards/{board}', 'BoardController@show')
+        ->middleware('is_admin')
+        ->name('boards.show');
 });
 
 
