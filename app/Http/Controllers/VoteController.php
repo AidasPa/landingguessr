@@ -27,7 +27,7 @@ class VoteController extends Controller
             ]);
 
 
-            if ($request->json('vote')['twitch_id'] === auth('api')->user()->twitch_id) {
+            if ($request->json('vote')['twitch_id'] === $board->user()->twitch_id) {
                 $vote->is_owner = true;
             }
             // Save the vote
