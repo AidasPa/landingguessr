@@ -13,6 +13,10 @@
   background-color: black;
 }
 
+.dot--red {
+  background-color: #f55353;
+}
+
 body {
   font-family: "Ubuntu" !important;
   overflow-x: hidden;

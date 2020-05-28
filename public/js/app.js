@@ -6127,10 +6127,7 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   key: 'bad5260df7bac9bc3026',
   cluster: 'eu',
   forceTLS: true
-}); // window.Echo.private('board-votes.1')
-//     .listen('Voted', (e) => {
-//         console.log(e);
-//     });
+});
 
 /***/ }),
 

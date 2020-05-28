@@ -24,7 +24,7 @@
             <br/>
             <div class="card">
                 <div class="card-body text-center">
-                    <strong>BETA 0.1.3</strong>
+                    <strong>BETA 0.1.4</strong>
                     <br/>
                     Made with <span class="text-danger">
                         ❤
