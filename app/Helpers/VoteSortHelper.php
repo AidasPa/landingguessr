@@ -39,6 +39,8 @@ class VoteSortHelper
         usort($voteBag, function ($a, $b) {
             return $a['diff'] <=> $b['diff'];
         });
+
+        $voteBag[0]['dot'] = 'orange';
         return $voteBag;
     }
 

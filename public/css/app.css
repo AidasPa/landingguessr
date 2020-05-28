@@ -17,6 +17,10 @@
   background-color: #f55353;
 }
 
+.dot--orange {
+  background-color: #fac234;
+}
+
 body {
   font-family: "Ubuntu" !important;
   overflow-x: hidden;
