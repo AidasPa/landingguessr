@@ -27,7 +27,9 @@ Route::get('/event', function () {
     $vote = new \App\Vote();
     $vote->guess = $faker->numberBetween(-300, -50);
     $vote->twitch_username = $faker->userName;
-    $vote->board_id = 2;
+    $vote->board_id = 1;
+    $vote->is_owner = $faker->boolean();
+    $vote->twitch_color = substr($faker->hexColor(), 1);
 
     $vote->save();
     event(new \App\Events\Voted($vote));

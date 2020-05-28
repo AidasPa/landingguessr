@@ -22,10 +22,19 @@ class VoteController extends Controller
             $vote = new Vote([
                 'board_id' => $board->id,
                 'twitch_username' => $request->json('vote')['twitch_username'],
+                'twitch_color' => $request->json('vote')['twitch_color'],
                 'guess' => $request->json('vote')['guess']
             ]);
+
+            if ($request->json('vote')['twitch_id'] === auth('api')->user()->twitch_id) {
+                $vote->is_admin = true;
+            }
+            // Save the vote
             $vote->save();
+
             event(new Voted($vote));
+
+
             return response()->json([
                 'status' => 'ok'
             ]);

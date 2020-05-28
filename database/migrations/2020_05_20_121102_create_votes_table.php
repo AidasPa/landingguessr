@@ -16,6 +16,8 @@ class CreateVotesTable extends Migration
         Schema::create('votes', function (Blueprint $table) {
             $table->id();
             $table->string('twitch_username')->unique();
+            $table->char('twitch_color', 6);
+            $table->boolean('is_owner')->default(false);
             $table->foreignId('board_id')->constrained();
             $table->integer('guess');
             $table->timestamps();

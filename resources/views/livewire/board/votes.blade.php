@@ -26,13 +26,19 @@
     @foreach($votes as $vote)
         <div class="row">
             <div class="col-4">
-                @if(!$landingRate)
-                    <div class="dot dot--grey"></div>
+                @if($vote['is_owner'])
+                    <div class="dot dot--red"></div>
                 @else
-                    <div class="dot dot--{{ $vote['dot'] }}"></div>
+                    @if(!$landingRate)
+                        <div class="dot dot--grey"></div>
+                    @else
+                        <div class="dot dot--{{ $vote['dot'] }}"></div>
+                    @endif
                 @endif
             </div>
-            <div class="col-4">{{ $vote['twitch_username'] }}</div>
+            <div class="col-4" style="color: {{ '#' . $vote['twitch_color'] }}">
+                {{ $vote['twitch_username'] }}
+            </div>
             <div class="col-4">{{ $vote['guess'] }}</div>
         </div>
     @endforeach
